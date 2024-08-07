@@ -1,63 +1,122 @@
 # WTWR (What to Wear?)
 
+## Getting Started
+
+This project is part II of the WTWR project. This has been converted from Create-React-App to Vite.
+Additionally, this project has been intgrated with NVM, eslint and some testing tools.
+
 ## About the project
 
 In this sprint, you'll continue working on the “WTWR” web application. Your goal for this iteration is to continue implementing functionality using the React features you've just learned. You will implement the following:
 
-A temperature unit toggle switch using React context
-A profile page route using React Router
-Form submission using controlled components or refs
-You'll also set up a mock server and write some code to make API calls to it. This mock server will mimic the behavior of the backend that you'll start building in Sprint 12.
+- A temperature unit toggle switch using React context
 
-updating project to use 'vite'
+- A profile page route using React Router
 
+- Form submission using controlled components or refs
+
+- You'll also set up a mock server and write some code to make API calls to it. This mock server will mimic the behavior of the backend that you'll start building in Sprint 12.
 
 ## Links
 
 - [Figma Design](https://www.figma.com/file/DTojSwldenF9UPKQZd6RRb/Sprint-10%3A-WTWR)
 
-### Component Structure
+## Component Structure
 
 The project includes a components directory with the following components:
 
-- App.js
-- Footer.js
-- Header.js
-- ItemCard.js
-- ItemModal.js
-- Main.js
-- ModalWithForm.js
-- WeatherCard.js
+```
 
-## software to install
+├── README.md
+├── dist
+│ ├── favicon.ico
+│ ├── index.html
+│ ├── logo192.png
+│ ├── logo512.png
+│ ├── manifest.json
+│ ├── robots.txt
+│ └── vite.svg
+├── index.css
+├── index.html
+── package-lock.json
+├── package.json
+├── public
+│ ├── favicon.ico
+│ ├── index.html
+│ ├── logo192.png
+│ ├── logo512.png
+│ ├── manifest.json
+│ ├── robots.txt
+│ └── vite.svg
+├── reportWebVitals.js
+├── se_project_react.code-workspace
+├── setupTests.js
+├── src
+│ ├── components
+│ ├── images
+│ ├── index.css
+│ ├── index.js
+│ ├── reportWebVitals.js
+│ ├── setupTests.js
+│ ├── utils
+│ └── vendor
+└── vite.config.js
+```
 
-- nvm
-- npm
+## Software Installation and Run React App
 
-## npm commands
+### Install nvm plugin
 
-### `npm start`
+- nvm: `curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Add Reference to terminal - add to bashrc, zshrc etc:
 
-### `npm test`
+open a terminal and copy below and paste the following
 
-Launches the test runner in the interactive watch mode.\
+```
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+```
 
-### `npm run build`
+open a new terminal || type `source ~/.bashrc || ~/.zshrc .. etc`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install npm with nvm plugin
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- open a new terminal
 
-### `npm run eject`
+- type : `nvm install npm`
 
-### how to run the app
+### Have nvm install correct version of node
 
-- cd to the project root
-- open a terminal type `nvm use`
-- type `npm install`
-- type `npm run build`
+- type : `cd <root directory> && nvm use`
+
+check installed nvm version
+
+- type : `nvm -ls`
+
+### If nvm version not installed
+
+- type : `nvm install <node version>`
+
+then
+
+- type : `nvm use`
+
+### Install project packages
+
+- type : `npm i || npm install`
+
+## Run Commands
+
+`npm run prebuild` - Cleans dependencies, reinstalls dependencies, builds project
+
+`npm run build` - Build Production (Vite + React)
+
+`npm run clean` - Removes build artifacts '/node_modules' && '/dist'
+
+`npm run start` - starts Vite && App Interface
+
+`npm run preview`- Build Preview (Vite + React) - Runs the app in the development mode.
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser
