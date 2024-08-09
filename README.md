@@ -33,34 +33,34 @@ The project includes a components directory with the following components:
 │ ├── index.html
 │ ├── logo192.png
 │ ├── logo512.png
-│ ├── manifest.json
+│ ├── manifest.jsxon
 │ ├── robots.txt
 │ └── vite.svg
 ├── index.css
 ├── index.html
-── package-lock.json
-├── package.json
+── package-lock.jsxon
+├── package.jsxon
 ├── public
 │ ├── favicon.ico
 │ ├── index.html
 │ ├── logo192.png
 │ ├── logo512.png
-│ ├── manifest.json
+│ ├── manifest.jsxon
 │ ├── robots.txt
 │ └── vite.svg
-├── reportWebVitals.js
+├── reportWebVitals.jsx
 ├── se_project_react.code-workspace
-├── setupTests.js
+├── setupTests.jsx
 ├── src
 │ ├── components
 │ ├── images
 │ ├── index.css
-│ ├── index.js
-│ ├── reportWebVitals.js
-│ ├── setupTests.js
+│ ├── index.jsx
+│ ├── reportWebVitals.jsx
+│ ├── setupTests.jsx
 │ ├── utils
 │ └── vendor
-└── vite.config.js
+└── vite.config.jsx
 ```
 
 ## Software Installation and Run React App

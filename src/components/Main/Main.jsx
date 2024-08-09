@@ -1,6 +1,9 @@
-import ItemCard from "../ItemCard/ItemCard.js";
-import WeatherCard from "../Weather/WeatherCard.js";
-import { defaultClothingItems, weatherOptions } from "../../utils/Constants.js";
+import ItemCard from "../ItemCard/ItemCard.jsx";
+import WeatherCard from "../Weather/WeatherCard.jsx";
+import {
+  defaultClothingItems,
+  weatherOptions,
+} from "../../utils/Constants.jsx";
 import { useMemo } from "react";
 import "./Main.css";
 

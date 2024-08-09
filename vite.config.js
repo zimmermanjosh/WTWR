@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      input: "index.html", // Specify the entry point relative to the project root
+      input: "./public/index.html", // Specify the entry point relative to the project root
     },
   },
   server: {

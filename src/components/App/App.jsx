@@ -1,18 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "../Header/Header.js";
-import Footer from "../Footer/Footer.js";
-import Main from "../Main/Main.js";
-import ModalWithForm from "../ModalWithForm/ModalWithForm.js";
+import Header from "../Header/Header.jsx";
+import Footer from "../Footer/Footer.jsx";
+import Main from "../Main/Main.jsx";
+import ModalWithForm from "../ModalWithForm/ModalWithForm.jsx";
 import { useState, useEffect } from "react";
-import ItemModal from "../ItemModal/ItemModal.js";
+import ItemModal from "../ItemModal/ItemModal.jsx";
 import {
   getForecastWeather,
   parseWeatherData,
-} from "../../utils/WeatherApi.js";
+} from "../../utils/WeatherApi.jsx";
 
 function App() {
+  console.log("App component rendered");
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
   const [temp, setTemp] = useState(0);

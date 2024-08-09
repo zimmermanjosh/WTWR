@@ -1,9 +1,9 @@
 import "./Header.css";
-import DateTime from "../DateTime/DateTime.js";
+import DateTime from "../DateTime/DateTime.jsx";
 import React, { useState, useEffect } from "react";
 import logoImage from "../../images/dashboard/logo.svg";
 import avatarImage from "../../images/dashboard/avatar.svg";
-import ToggleSwitch from "../ToggleSwitch/ToggleSwitch.js";
+import ToggleSwitch from "../ToggleSwitch/ToggleSwitch.jsx";
 
 const Header = ({ onCreateModal }) => {
   //console.log("Header");
@@ -17,7 +17,7 @@ const Header = ({ onCreateModal }) => {
         const { latitude, longitude } = position.coords;
 
         fetch(
-          `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=20740fa69bd84624bf45f4a801ef40c3`,
+          `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=20740fa69bd84624bf45f4a801ef40c3`
         )
           .then((response) => response.json())
           .then((data) => {
