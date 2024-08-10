@@ -6,6 +6,6 @@ export default defineConfig({
 
   server: {
     open: true, // automatically open the app in the browser
-    //port: 3000,
+    port: 3131,
   },
 });
