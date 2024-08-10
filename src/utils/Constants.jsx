@@ -88,3 +88,5 @@ export const weatherOptions = [
     type: "storm",
   },
 ];
+
+export const tempDefault = [{ hot: 80 }, { warm: 60 }, { cold: 50 }];

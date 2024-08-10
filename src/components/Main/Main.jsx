@@ -6,14 +6,18 @@ import {
 } from "../../utils/Constants.jsx";
 import { useMemo } from "react";
 import "./Main.css";
+import { tempDefault } from "../../utils/Constants.jsx";
 
 function Main({ weatherTemp, onSelectedCard }) {
   const weatherType = useMemo(() => {
-    if (weatherTemp >= 86) {
+    if (weatherTemp >= tempDefault.hot) {
       return "hot";
-    } else if (weatherTemp >= 66 && weatherTemp <= 85) {
+    } else if (
+      weatherTemp >= tempDefault.cold &&
+      weatherTemp <= tempDefault.hot
+    ) {
       return "warm";
-    } else if (weatherTemp <= 65) {
+    } else if (weatherTemp <= tempDefault.cold) {
       return "cold";
     }
   }, [weatherTemp]);
